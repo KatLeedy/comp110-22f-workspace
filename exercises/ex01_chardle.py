@@ -2,12 +2,11 @@
 __author__ = "730610012"
 
 user_word: str = input("Enter a 5-character word: ")
-user_character: str = input("Enter a single character: ")
-print("Searching for " + user_character + "in " + user_word)
-
 if len(user_word) != 5:
     print("Error: Word must contain 5 characters")
     exit()
+user_character: str = input("Enter a single character: ")
+print("Searching for " + user_character + "in " + user_word)
 if len(user_character) != 1:
     print("Error: Character must be a single character.")
     exit()
