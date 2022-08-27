@@ -9,7 +9,7 @@ if len(user_word) != 5:
     print("Error: Word must contain 5 characters")
     exit()
 if len(user_character) != 1:
-    print(Error: Character must be a single character.)
+    print("Error: Character must be a single character.")
     exit()
 
 count: int = 0
@@ -28,6 +28,7 @@ if user_word[3] == user_character:
 if user_word[4] == user_character: 
     count = count + 1 
     print(user_character + " is found at index 4")
-else: 
+if count == 0: 
     print("No instances of " + user_character + " found in " + user_word)
 
+print(str(count) + " instance of " + user_character + " found in " + user_word)
